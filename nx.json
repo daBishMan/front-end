@@ -1,38 +1,52 @@
 {
-  "npmScope": "front-end",
-  "affected": {
-    "defaultBase": "master"
-  },
-  "implicitDependencies": {
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
+    "npmScope": "front-end",
+    "affected": {
+        "defaultBase": "master"
     },
-    ".eslintrc.json": "*"
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
-      }
-    }
-  },
-  "targetDependencies": {
-    "build": [
-      {
-        "target": "build",
-        "projects": "dependencies"
-      }
-    ]
-  },
-  "projects": {
-    "client": {
-      "tags": []
+    "implicitDependencies": {
+        "package.json": {
+            "dependencies": "*",
+            "devDependencies": "*"
+        },
+        ".eslintrc.json": "*"
     },
-    "client-e2e": {
-      "tags": [],
-      "implicitDependencies": ["client"]
+    "tasksRunnerOptions": {
+        "default": {
+            "runner": "@nrwl/workspace/tasks-runners/default",
+            "options": {
+                "cacheableOperations": ["build", "lint", "test", "e2e"]
+            }
+        }
+    },
+    "targetDependencies": {
+        "build": [
+            {
+                "target": "build",
+                "projects": "dependencies"
+            }
+        ]
+    },
+    "projects": {
+        "client": {
+            "tags": []
+        },
+        "client-e2e": {
+            "tags": [],
+            "implicitDependencies": ["client"]
+        },
+        "dashboard": {
+            "tags": []
+        },
+        "dashboard-e2e": {
+            "tags": [],
+            "implicitDependencies": ["dashboard"]
+        },
+        "shell": {
+            "tags": []
+        },
+        "shell-e2e": {
+            "tags": [],
+            "implicitDependencies": ["shell"]
+        }
     }
-  }
 }
