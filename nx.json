@@ -30,23 +30,11 @@
         "client": {
             "tags": []
         },
-        "client-e2e": {
-            "tags": [],
-            "implicitDependencies": ["client"]
-        },
         "dashboard": {
             "tags": []
         },
-        "dashboard-e2e": {
-            "tags": [],
-            "implicitDependencies": ["dashboard"]
-        },
         "shell": {
             "tags": []
-        },
-        "shell-e2e": {
-            "tags": [],
-            "implicitDependencies": ["shell"]
         }
     }
 }

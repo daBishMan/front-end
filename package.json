@@ -29,7 +29,6 @@
     },
     "private": true,
     "dependencies": {
-        "@angular-architects/module-federation": "^12.2.0",
         "@angular/animations": "^12.1.0",
         "@angular/common": "^12.1.0",
         "@angular/compiler": "^12.1.0",
@@ -52,7 +51,6 @@
         "@angular/compiler-cli": "^12.1.0",
         "@angular/language-service": "^12.1.0",
         "@nrwl/cli": "12.7.2",
-        "@nrwl/cypress": "12.7.2",
         "@nrwl/eslint-plugin-nx": "12.7.2",
         "@nrwl/jest": "12.7.2",
         "@nrwl/linter": "12.7.2",
@@ -63,7 +61,6 @@
         "@types/node": "14.14.33",
         "@typescript-eslint/eslint-plugin": "~4.28.3",
         "@typescript-eslint/parser": "~4.28.3",
-        "cypress": "^7.3.0",
         "dotenv": "~10.0.0",
         "eslint": "7.22.0",
         "eslint-config-prettier": "8.1.0",
