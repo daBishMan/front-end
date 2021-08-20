@@ -6,7 +6,22 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
     declarations: [AppComponent],
-    imports: [BrowserModule, RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' })],
+    imports: [
+        BrowserModule,
+        RouterModule.forRoot(
+            [
+                {
+                    path: 'client',
+                    loadChildren: () => import('client/Module').then(m => m.RemoteEntryModule),
+                },
+                {
+                    path: 'dashboard',
+                    loadChildren: () => import('dashboard/Module').then(m => m.RemoteEntryModule),
+                },
+            ],
+            { initialNavigation: 'enabledBlocking' }
+        ),
+    ],
     providers: [],
     bootstrap: [AppComponent],
 })
